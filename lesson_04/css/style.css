@@ -1,0 +1,58 @@
+@import url("reset.css");
+
+* {
+    color: blue;
+}
+
+h1 {
+    color: red;
+}
+
+.gray-text {
+    color: gray;
+}
+
+[class*="-text"] {
+    color: green;
+}
+
+#keyword {
+    color: aqua;
+}
+
+p.simple-text {
+    color: teal;
+}
+
+.main-header.bold {
+    color: blueviolet;
+}
+
+.simple-text,
+.gray-text {
+    color: tomato;
+}
+
+.gray-section p {
+    color: yellowgreen;
+}
+
+.gray-section .gray-text {
+    color: slategrey;
+}
+
+.blue-section * {
+    color: aquamarine;
+}
+
+div > p {
+    color: fuchsia
+}
+
+div ~h2 {
+    color: chocolate
+}
+
+p + a {
+    color: olivedrab
+}
