@@ -1,0 +1,90 @@
+@import url("fonts.css");
+
+@import url("reset.css");
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    color: #7D7D7D;
+    line-height: 1.47;
+}
+
+.part1 {
+    color: black;
+    font-family: "Gabarito", sans-serif;
+}
+
+.part1 h3 {
+    font-weight: 600;
+    font-size: 19px;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 3px;
+}
+
+.part1 p {
+    text-align: justify;
+    word-spacing: 5px;
+}
+
+.pic {
+    text-align: center;
+}
+
+.head h4 {
+    text-align: center;
+}
+
+h1,h2 {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+h1 {
+    color: #37393F;
+    font-size: 30px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+ul {
+    font-family: "Causten", sans-serif;
+    font-weight: 500;
+}
+
+.title {
+    text-transform: capitalize;
+}
+
+.subtitle {
+    color: #6B77E5;
+}
+
+
+.source {
+    text-shadow: 5px 3px 7px rgba(115, 111, 252, 0.7);
+    line-height: 2.5;
+}
+
+a {
+    color: blue;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+p span {
+    font-weight: 600;
+}
+
+span ~ a {
+    color: #08379d;
+    font-style: normal;
+}
+
+footer p {
+    text-transform: uppercase;
+}

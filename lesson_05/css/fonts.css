@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600');
+
+
+@font-face {
+	font-family: "Causten";
+	src:
+		url("../fonts/Causten-Medium.woff2") format("woff2"),
+		url("../fonts/Causten-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
