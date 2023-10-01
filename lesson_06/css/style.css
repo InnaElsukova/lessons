@@ -1,0 +1,198 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.figma1 {
+    margin: 0 auto;
+    max-width: 692px;
+
+    color: #7D7D7D;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.meet {
+    width: 100%;
+    margin-bottom: 37px;
+    line-height: 1.27;
+}
+/* ******** Headers ******** */
+.figma1 h2,
+.figma1 h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 1.27;
+}
+
+.figma1 h2 {
+    color: #37393F;
+    font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 18px;
+}
+
+.figma1 h3 {
+    font-size: 20px;
+}
+
+.violet {
+    color: #6B77E5;
+    margin-bottom: 12px;
+}
+
+.green {
+    color: #40DDB6;
+    margin-bottom: 23px;
+}
+
+.small {
+    font-size: 25px;
+}
+/* ******** Text ******** */
+.text {
+    line-height: 1.47;
+}
+
+h2 ~ p {
+    margin-bottom: 42px;
+}
+
+h3 ~ p {
+    margin-bottom: 40px;
+}
+/* ********  ******** */
+.benefits-pic,
+.benefits {
+    display: inline-block;
+    max-width: 49%;
+    vertical-align: top;
+}
+
+.benefits-pic {
+    width: 100%;
+}
+
+.benefits {
+    padding-left: 29px;
+}
+
+.figma1 ul {
+    margin-left: 30px;
+}
+
+.figma1 li {
+    margin-bottom: 30px;
+}
+/* ************************************************************** */
+.figma2 {
+    background-color: #FFF9F4;
+    font-family: "Inter", sans-serif;
+    color: #7D7D7D;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 50px;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1169px;
+}
+
+.content-text {
+    width: 563px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.content-pic {
+    width: 272px;
+    margin-left: 22px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.figma2 h3 {
+    color: #D06B00;
+    text-transform: uppercase;
+    font-size: 28px;
+    margin: 25px 0 13px;
+    
+}
+
+.figma2 h2 {
+    color: #0E333D;
+    font-family: "DM Serif Text", serif;
+    font-size: 59px;
+    text-transform: capitalize;
+    line-height: 1.47;
+}
+
+.content-text p {
+    color: #474747;
+    font-family: Inter;
+    font-size: 20px;
+    line-height: 1.8;
+}
+/* *** *********************************************************** */
+.parent-container {
+    width: 100%;
+    background-color: yellow;
+    font-size: 0;
+    text-align: center;
+}
+
+.parent-container > p {
+    font-size: 30px;
+    text-shadow: 5px 5px 4px #222964;
+}
+
+
+.parent-container > div {
+    font-size: 20px;
+}
+
+.child1 {
+    display: inline-block;
+    background-color: #b42d8b;
+    width: 200px;
+    height: 500px;
+    overflow: auto;
+    padding: 10px 20px;
+    margin: 30px;
+}
+
+.child2 {
+    display: inline-block;
+    background-color: #2db49e;
+    width: 200px;
+    padding: 5px 20px 10px;
+}
+
+.child3 {
+    display: inline-block;
+    background-color: #389029;
+    width: 200px;
+    padding: 25px;
+}
+
+p span {
+font-size: 25px;
+color: white;
+}
+
+/* end */
+.end-link {
+    text-align: center;
+}
+
+.end-link a {
+    display: inline-block;
+    font-size: 30px;
+    background-color: #379ac5;
+}
