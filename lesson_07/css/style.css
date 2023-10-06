@@ -1,0 +1,284 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #7d7d7d;
+    font-size: 18px;
+}
+
+h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.menu li {
+    margin: 5px 0 5px 20px;
+    border-left: 13px dotted #40DDB6;
+}
+
+.block1 {
+    max-width: 1318px;
+    padding: 150px 50px;
+    margin: 0 auto;
+}
+
+.pre-header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+.pre-header * {
+    display: inline-block;
+}
+
+.pre-header h6 {
+    color: #37393F;
+    font-family: Inter;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.square6 {
+    width: 12px;
+    height: 12px;
+    border: 6px solid #40DDB6;
+    vertical-align: center;
+}
+
+.main-header-cons,
+.sub-header-cons,
+.sub4-header-cons {
+    color: #37393F;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 1.21;
+}
+
+.main-header-cons {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.sub-header-cons {
+    font-size: 40px;
+    margin-bottom: 11px;
+}
+
+.sub4-header-cons {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.text {
+    margin-bottom: 24px;
+    line-height: 1.47;
+}
+
+.text-section {
+    margin-bottom: 35px;
+    line-height: 1.47;
+}
+
+.text p,
+.text-section  p {
+    margin-bottom: 12px;
+}
+
+.text-section li {
+    font-weight: 500;
+    margin-bottom: 28px;
+} 
+
+.text-section ul, 
+.text-section ol {
+    margin: 0 0 0 35px;
+}
+
+.green {
+    color: #40DDB6;
+    font-weight: 100;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.margin100 {
+    margin-bottom: 100px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dotted black;
+}
+
+.block2 {
+    max-width: 890px;
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+.block3 {
+    max-width: 1240px;
+    padding: 90px 0 90px 21px;
+    margin: 0 auto;
+    color: #807D7E;
+    font-family: "Causten", sans-serif;
+    font-size: 20px;
+    line-height: 1.68;
+    letter-spacing: 0.4px;
+}
+
+.rectangle {
+    width: 6px;
+    height: 28px;
+    border-radius: 10px;
+    background: #8A33FD;
+    border: 3px solid #8A33FD;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.main-header-euphoria {
+    color: #3C4242;
+    font-family: "Core Sans C", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.56px;
+    margin-bottom: 30px;
+}
+
+.main-header-euphoria * {
+    display: inline-block;
+}
+
+.sub-header-euphoria {
+    font-family: "Core Sans C", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.text-segment {
+    margin-bottom: 25px;
+}
+
+.text-segment p {
+    margin-bottom: 20px;
+}
+
+.extra-bold {
+    font-weight: 700;
+}
+
+.block4 {
+    max-width: 1103px;
+    max-height: 519px;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 700;
+    margin: 50px auto;
+}
+
+.block4 *{
+    display: inline-block;
+    vertical-align: middle;
+    
+}
+
+.sub-header-jewellery {
+    color: #D58417;
+    font-size: 20px;
+    margin-bottom: 27px;
+    text-transform: uppercase;
+}
+
+.main-header-jewellery {
+    color: #000;
+    font-size: 64px;
+    line-height: 100%;
+    margin-bottom: 31px;
+}
+
+.text-block {
+    margin: 0 75px 0 0;
+    max-width: 503px;
+}
+
+.text-block *{
+    display: block;
+}
+
+.text-block p {
+    color: #606060;
+    font-size: 30px;
+    line-height: 140%;
+}
+
+.img-box {
+    border-radius: 235px;
+    border: 1px solid #502203;
+}
+
+.img-box img {
+    border-radius: 235px;
+}
+
+.img-small {
+    margin: 14px 10px -14px -10px;
+}
+
+.img-big {
+    margin: 19px 11px -19px -11px;
+}
+
+/* Training */
+.block5 {
+    margin: 50px;
+    color: #000;
+}
+
+.link {
+    background-color: yellowgreen;
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px 0;
+    box-shadow: 
+        5px 10px 20px black,
+        inset 2px 5px 8px black;
+}
+
+.block5 img {
+    border-radius: 50%;
+    border: 2px solid palevioletred;
+    box-shadow: 5px 10px 20px black;
+    opacity: 0.7;
+}
+
+.block-item {
+    margin: 20px;
+    padding: 5px;
+    width:300px;
+    height: 200px;
+    background-color: #ea47ab;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+    outline: 10px solid yellowgreen;
+}
+
+.block-item h6 {
+    text-align: center;
+    font-size: 20px;
+    box-shadow: 5px 10px 20px black;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    visibility: hidden;
+}
