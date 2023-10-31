@@ -1,0 +1,54 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #7d7d7d;
+    font-size: 18px;
+    background: url(../img/bg.webp ) repeat fixed;
+}
+
+.content {
+    width: 90%;
+    background: #d3d5e7;;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #6B77E5;
+    padding: 20px;
+
+}
+
+.content h1,
+.content h3 {
+    color: #6B77E5;
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 5px 5px 5px #40DDB6;
+}
+
+footer .content {
+    text-align: center;
+}
+.content h3 {
+    font-size: 20px;   
+    display: inline-block;
+}
+
+.item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.item span {
+    font-size: 20px;
+    color: #6B77E5;
+}
+
+.item img {
+    max-width: 70%;
+}
+
+.item *{
+    vertical-align: middle;
+}
