@@ -1,0 +1,8 @@
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #7d7d7d;
+    font-size: 18px;
+}
