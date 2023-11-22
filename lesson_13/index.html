@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 13</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header header--separated">
+            <div class="header__container">
+                <h1 class="main-header">
+                    Lesson 13
+                </h1>
+            </div>
+        </header>
+        <main class="page page--separated">
+            <div class="page__container">
+                <h2 class="page__header">
+                    CSS Transformations
+                </h2>
+                <!--2D transformations -->
+                <div class="page__item item">
+                    <h2 class="item__header">Translate -15%, 15%</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--translate">
+                            This is translated item
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Scale 0.7</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--scale">
+                            This is scaled item
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Rotate</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--rotate">
+                            This is rotated item
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Rotate X</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--rotateX">
+                            This is rotated item (axis - X)
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Skew</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--skew">
+                            This is skewed item
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Multi transformation</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--multi">
+                            This is multi transformation
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Hover me</h2>
+                    <div class="item__block">
+                        <a href="#" class="item__skew-button"><span>Button</span></a>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Transform-origin</h2>
+                    <div class="item__block">
+                        <div class="item__block-transform item__block-transform--origin">
+                            This is multi transform-origin: 0 0 
+                        </div>
+                    </div>
+                </div>
+                <!-- 3D transformations -->
+                <div class="page__item item">
+                    <h2 class="item__header">Transform-translate3d</h2>
+                    <div class="item__block3D">
+                        <div class="item__block3D-transform item__block3D-transform--translate">
+                            This is transform-translate 3d
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Transform-rotate 3d</h2>
+                    <div class="item__block3D item__block3D--styled">
+                        <div class="item__block3D-transform item__block3D-transform--rotate">
+                            This is transform-rotate 3d
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page__item item">
+                    <h2 class="item__header">Flip</h2>
+
+                    <div class="item__flip flip">
+                        <div class="flip__body">
+                            <div class="flip__back">
+                                Back side
+                            </div>
+                            <div class="flip__front">
+                                Front side
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="page__container">
+                <h2 class="page__header">
+                    Car
+                </h2>
+                <div class="page__picture picture">
+                    <div class="picture__sky">
+                        <div class="picture__sky-sun"></div>
+                        <div class="picture__sky-cloud">
+                            <div class="picture__sky-cloud1"></div>
+                            <div class="picture__sky-cloud2"></div>
+                            <div class="picture__sky-cloud3"></div>
+                        </div>
+                    </div>
+                    <div class="picture__forest">
+
+                    </div>
+                    <div class="picture__road">
+                        <div class="picture__road-line"></div>
+                        <div class="car">
+                            <div class="car__front"></div>
+                            <div class="car__back"></div>
+                            <div class="car__back-top"></div>
+                            <div class="car__front-top"></div>
+                            <div class="wheel wheel--left">
+                                <div class="wheel__center">
+                                    <div class="wheel__disk"></div>
+                                    <div class="wheel__disk wheel__disk--rotate1"></div>
+                                    <div class="wheel__disk wheel__disk--rotate2"></div>
+                                    <div class="wheel__disk wheel__disk--rotate3"></div>
+                                    <div class="wheel__disk wheel__disk--rotate4"></div>
+                                </div>
+                                <div class="wheel__axle"></div>
+                            </div>
+                            <div class="wheel wheel--right">
+                                <div class="wheel__center">
+                                    <div class="wheel__disk"></div>
+                                    <div class="wheel__disk wheel__disk--rotate1"></div>
+                                    <div class="wheel__disk wheel__disk--rotate2"></div>
+                                    <div class="wheel__disk wheel__disk--rotate3"></div>
+                                    <div class="wheel__disk wheel__disk--rotate4"></div>
+                                </div>
+                                <div class="wheel__axle"></div> 
+                            </div>
+                            <div class="car__front-window"></div>
+                            <div class="car__front-door">
+                                <div class="car__handle"></div>
+                            </div>
+                            <div class="car__back-window"></div>
+                            <div class="car__back-door">
+                                <div class="car__handle"></div>
+                            </div>
+                            <div class="car__baggage-window"></div>
+                            <div class="car__fuel-door"></div>
+                            <div class="car__light"></div>
+                            <div class="car__wheel-5"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="footer footer--separated">
+            <div class="footer__container">
+                Homework done
+            </div>
+        </footer>
+    </div>
+       
+</body>
+</html>
