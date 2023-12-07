@@ -369,6 +369,11 @@ body {
     letter-spacing: 0.44px;
 }
 
+.item-wishlist__font-black:hover a,
+.order__value-name:hover a{
+    text-decoration: underline;
+}
+
 .item-wishlist__font-gray {
     color: #807D7E;
     font-weight: 500;
