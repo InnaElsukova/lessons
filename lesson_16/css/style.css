@@ -523,4 +523,6 @@ body {
     padding: 21px 61px 22px;
     border-radius: 0;
     font-weight: 600;
+    display: block;
+    margin: 0 auto;
 }
