@@ -422,7 +422,6 @@ body {
 
 .data-card__column {
     flex: 0 0 50%;
-    width: 50%;
     padding: 0 15px;
 }
 
@@ -488,7 +487,7 @@ body {
 }
 
 .area-input__col {
-    width: 50%;
+    flex: 0 0 50%;
     padding: 0 17px;
 
 }
