@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 16</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/Logo.svg" alt="logo">
+                    </a>
+                </div>
+                <form action="#" class="header__form">
+                    <input type="search" class="header__search" name="search" placeholder="Search">
+                    <select class="header__language" name="language">
+                        <option value="en">English (US)</option>
+                        <option value="ua">Ukrainian</option>
+                        <option value="sp">Spanish</option>
+                    </select>
+                    <div class="button-section">
+                        <button class="button" type="button">Login</button>
+                        <button class="button button--white" type="button">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <main class="page">
+            <!-- 1 -->
+            <div class="page__container-info info">
+                <h2 class="info__header-main main-header">My Info</h2>
+                <form id="address-form" class="address-form" method="GET" enctype="multipart/form-data" action="#">
+                    <h3 class="info__header-sub sub-header">
+                        Add Address
+                    </h3>
+                    <div class="info__address address">
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="first-name" class="item-form__label">
+                                    First Name*
+                                </label>
+                                <input id="first-name" autocomplete="on" name="first-name" 
+                                placeholder="First Name" class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="last-name" class="item-form__label">
+                                    Larst Name*
+                                </label>
+                                <input id="last-name" autocomplete="on" name="last-name" 
+                                placeholder="Last Name" class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="country" class="item-form__label">
+                                    Country / Region*
+                                </label>
+                                <input id="country" autocomplete="on" name="country" 
+                                placeholder="Country / Region" class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="company-name" class="item-form__label">
+                                    Company Name
+                                </label>
+                                <input id="company-name" autocomplete="on" name="company-name" 
+                                placeholder="Company (optional)" class="item-form__field" type="text">
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="street" class="item-form__label">
+                                    Street Address*
+                                </label>
+                                <input id="street" autocomplete="on" name="street" 
+                                placeholder="House number and street name" class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="apt" class="item-form__label">
+                                    Apt, suite, unit
+                                </label>
+                                <input id="apt" autocomplete="on" name="apt" 
+                                placeholder="apartment, suite, unit, etc. (optional)" class="item-form__field" type="text">
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="city" class="item-form__label">
+                                    City*
+                                </label>
+                                <input id="city" autocomplete="on" name="city" placeholder="Town / City"
+                                    class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="state" class="item-form__label">
+                                    State*
+                                </label>
+                                <input id="state" autocomplete="on" name="state" placeholder="State"
+                                    class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="phone" class="item-form__label">
+                                    Phone*
+                                </label>
+                                <input id="phone" autocomplete="on" name="phone" placeholder="Phone" minlength="5" maxlength="12"
+                                    class="item-form__field" type="tel" required>
+                            </div>
+                        </div>
+                        <div class="address__column">
+                            <div class="address__item item-form">
+                                <label for="postal-code" class="item-form__label">
+                                    Postal Code*
+                                </label>
+                                <input id="postal-code" autocomplete="on" name="postal-code" minlength="4" maxlength="6"
+                                placeholder="Postal Code" class="item-form__field" type="tel" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info__delivery delivery">
+                        <div class="address__item item-form">
+                            <label for="delivery-instruction" class="item-form__label">
+                                Delivery Instruction
+                            </label>
+                            <textarea id="delivery-instruction" name="delivery-instruction" placeholder="Delivery Instruction"
+                                class="item-form__field item-form__field--textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="info__def-address">
+                        <div class="info__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" check id="def-shipping" name="shipping">
+                            <label for="def-shipping" class="checkbox__label">Set as default shipping address</label>
+                        </div>
+                        <div class="info__checkbox checkbox">
+                            <input type="checkbox" class="checkbox__input" check id="def-billing" name="billing">
+                            <label for="def-billing" class="checkbox__label">Set as default billing address</label>
+                        </div>
+                    </div>
+                    <div class="info__buttons">
+                        <button class="info__button button" type="submit">
+                            Save
+                        </button>
+                        <button class="info__button info__button--gray button" type="reset">
+                            Cancel
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- 2 -->
+            <div class="page__container-check check">
+                <h2 class="check__header-main main-header main-header--decorated">Check Out</h2>
+                <form id="billing-form" class="billing-form" method="GET" enctype="multipart/form-data" action="#">
+                    <h3 class="billing__header sub-header">
+                        Billing Details
+                    </h3>
+                    <div class="billing-form__data col2">
+                        <div class="col2__column">
+                            <div class="billing__item item-form">
+                                <label for="first-name" class="item-form__label">
+                                    First Name*
+                                </label>
+                                <input id="first-name" autocomplete="on" name="first-name" placeholder="First Name" class="item-form__field"
+                                    type="text" required>
+                            </div>
+                        </div>
+                        <div class="col2__column">
+                            <div class="address__item item-form">
+                                <label for="last-name" class="item-form__label">
+                                    Larst Name*
+                                </label>
+                                <input id="last-name" autocomplete="on" name="last-name" placeholder="Last Name" class="item-form__field"
+                                    type="text" required>
+                            </div>
+                        </div>
+                        <div class="col2__column">
+                            <div class="address__item item-form">
+                                <label for="country" class="item-form__label">
+                                    Country / Region*
+                                </label>
+                                <input id="country" autocomplete="on" name="country" placeholder="Country / Region" class="item-form__field"
+                                    type="text" required>
+                            </div>
+                        </div>
+                        <div class="col2__column">
+                            <div class="address__item item-form">
+                                <label for="company-name" class="item-form__label">
+                                    Company Name
+                                </label>
+                                <input id="company-name" autocomplete="on" name="company-name" placeholder="Company (optional)"
+                                    class="item-form__field" type="text">
+                            </div>
+                        </div>
+                        <div class="col2__column">
+                            <div class="address__item item-form">
+                                <label for="street" class="item-form__label">
+                                    Street Address*
+                                </label>
+                                <input id="street" autocomplete="on" name="street" placeholder="House number and street name"
+                                    class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col2__column">
+                            <div class="address__item item-form">
+                                <label for="apt" class="item-form__label">
+                                    Apt, suite, unit
+                                </label>
+                                <input id="apt" autocomplete="on" name="apt" placeholder="apartment, suite, unit, etc. (optional)"
+                                    class="item-form__field" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing-form__data col3">
+                        <div class="col3__column">
+                            <div class="address__item item-form">
+                                <label for="city" class="item-form__label">
+                                    City*
+                                </label>
+                                <input id="city" autocomplete="on" name="city" placeholder="Town / City" class="item-form__field" type="text"
+                                    required>
+                            </div>
+                        </div>
+                        <div class="col3__column">
+                            <div class="address__item item-form">
+                                <label for="state" class="item-form__label">
+                                    State*
+                                </label>
+                                <input id="state" autocomplete="on" name="state" placeholder="State" class="item-form__field" type="text" required>
+                            </div>
+                        </div>
+                        <div class="col3__column">
+                            <div class="address__item item-form">
+                                <label for="postal-code" class="item-form__label">
+                                    Postal Code*
+                                </label>
+                                <input id="postal-code" autocomplete="on" name="postal-code" minlength="4" maxlength="6" placeholder="Postal Code"
+                                    class="item-form__field" type="tel" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="billing-form__data col2">
+                        <div class="col2__column">
+                           <div class="address__item item-form">
+                                <label for="phone" class="item-form__label">
+                                    Phone*
+                                </label>
+                                <input id="phone" autocomplete="on" name="phone" placeholder="Phone" minlength="5" maxlength="12"
+                                    class="item-form__field" type="tel" required>
+                            </div> 
+                        </div>
+                    </div>
+                    <button class="check__button button" type="submit">
+                        Continue to delivery
+                    </button>
+                    <div class="billing-form__checkbox checkbox">
+                        <input type="checkbox" class="checkbox__input" check id="save-info" name="save-info">
+                        <label for="save-info" class="checkbox__label">Save my information for a faster checkout</label>
+                    </div>
+                </form>
+
+                <form id="shipping-form" class="shipping-form" method="POST" enctype="multipart/form-data" action="#">
+                    <div class="shipping-form__item item-shipping">
+                        <div class="item-shipping__header">
+                            <h3 class="item-shipping__header-name sub-header">
+                                Shipping Address
+                            </h3>
+                            <p class="item-shipping__header-desc">
+                                Select the address that matches your card or payment method.
+                            </p>
+                        </div>
+                        <div class="item-shipping__content item-shipping__content-radio">
+                            <div class="item-shipping__content-data radio">
+                                <input type="radio" class="radio__input" name="sh-addr" value="billing" id="ship-address">
+                                <label for="ship-address" class="radio__label">Same as Billing address</label>
+                            </div>
+                            <div class="item-shipping__content-data radio">
+                                <input type="radio" class="radio__input" name="sh-addr" value="different" id="dif-address">
+                                <label for="dif-address" class="radio__label">Use a different shipping address</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-form__item item-shipping">
+                        <div class="item-shipping__header">
+                            <h3 class="item-shipping__header-name sub-header">
+                                Shipping Method
+                            </h3>
+                        </div>
+                        <div class="item-shipping__content">
+                            <div class="item-shipping__content-data">
+                                Arrives by Monday, June 7
+                            </div>
+                            <div class="item-shipping__content-data">
+                                Delivery Charges
+                                <p>
+                                    Additional fess may apply
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-form__item item-shipping">
+                        <div class="item-shipping__header">
+                            <h3 class="item-shipping__header-name sub-header">
+                                Payment Method
+                            </h3>
+                            <p class="item-shipping__header-desc">
+                                All transactions are secure and encrypted.
+                            </p>
+                        </div>
+                        
+                        <div class="item-shipping__content item-shipping__content-payment">
+                            <div class="item-shipping__content-data">
+                                <div class="radio">
+                                    <input type="radio" class="radio__input" name="payment" value="card" id="payment-card">
+                                     <label for="payment-card" class="radio__label">
+                                        Credit Card <br/>
+                                        <span class="radio__label-description">
+                                            We accept all major credit cards. 
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="item-shipping__payment payment">
+                                    <div class="payment__card-type">
+                                        <img src="img/g_pay.svg" alt="googlepay">
+                                        <img src="img/visa.svg" alt="googlepay">
+                                        <img src="img/paypal.svg" alt="paypal">
+                                        <img src="img/paypass.svg" alt="paypass">
+                                    </div>
+                                    <div class="payment__card-data data-card">
+
+                                        <div class="data-card__column">
+                                            <input type="text" class="data-card__input" autocomplete="off" placeholder="Card number" name="card_num">
+                                        </div>
+                                        <div class="data-card__column">
+                                            <input type="text" class="data-card__input" autocomplete="off" placeholder="Name of card" name="card_name">
+                                        </div>
+                                        <div class="data-card__column">
+                                            <input type="text" class="data-card__input" autocomplete="off" placeholder="Expiration date (MM/YY)" name="card_exp">
+                                        </div>
+                                        <div class="data-card__column">
+                                            <input type="text" class="data-card__input" autocomplete="off" placeholder="Security Code" name="card_sec">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-shipping__content-data">
+                                <div class="radio">
+                                    <input type="radio" class="radio__input" name="payment" value="cash" id="payment-cash">
+                                    <label for="payment-cash" class="radio__label">Cash on delivery</label>
+                                </div>
+                            </div>
+                            <div class="item-shipping__content-data">
+                                <div class="radio">
+                                    <input type="radio" class="radio__input" name="payment" value="paypal" id="payment-paypal">
+                                    <label for="payment-paypal" class="radio__label">Paypal</label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="check__button button" type="submit">
+                            Pay Now
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!-- 3 -->
+            <div class="page__container-callback">
+                <form id="callback-form" class="callback-form" method="GET" enctype="multipart/form-data" action="#">
+                    <h4 class="callback-form__subheader subheader">
+                        Contact Us
+                    </h4>
+                    <h2 class="callback-form__main-header main-header">
+                        Request A Call Back !
+                    </h2>
+                    <div class="callback-form__input-area area-input">
+                        <div class="area-input__col">
+                            <input type="text" class="area-input__data" placeholder="Your Name" name="name" autocomplete="on">
+                        </div>
+                        <div class="area-input__col">
+                            <input type="text" class="area-input__data" placeholder="Email Address" name="email" autocomplete="on">
+                        </div>
+                        <div class="area-input__col">
+                            <input type="text" class="area-input__data" placeholder="Phone Number" name="phone" autocomplete="on">
+                        </div>
+                        <div class="area-input__col">
+                            <input type="text" class="area-input__data" placeholder="Subject" name="subj" autocomplete="on">
+                        </div>
+                        <div class="area-input__textarea">
+                            <textarea class="area-input__textarea-item" placeholder="Message..." id="message" name="message"></textarea>
+                        </div>
+                    </div>
+                    <button class="callback-form__button button" type="submit">
+                        Submit
+                    </button>
+                </form>
+            </div>
+
+        </main>
+        <footer class="footer">
+
+        </footer>
+    </div>
+</body>
+</html>
