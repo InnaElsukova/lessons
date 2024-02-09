@@ -349,8 +349,10 @@ body {
         top: 0;
         left: 0;
         z-index: 5;
-        // border-bottom: 1px solid $mainDark;
         box-shadow: 1px 0 15px $mainDark;
+        @media (max-width: $screenMobileSmall) {
+            padding: 15px 0;
+        }
     }
 
     &__container {
@@ -359,9 +361,11 @@ body {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            // @media (max-width: $screenTablet) {
-            //     flex-direction: column;
-            // }
+            @media (max-width: $screenMobileSmall) {
+                 flex-direction: column;
+                 gap: 20px;
+            }
+            
         }       
     }
 
@@ -437,9 +441,8 @@ body {
         }
         
         @media (max-width: $screenTablet) {
-            position: absolute;
-            top: 0;
-            right: 0;
+            gap: 30px;
+            width: 100%;
         }
     }
 
